@@ -3,7 +3,7 @@ https://linuxacademy.com/howtoguides/posts/show/topic/13750-managing-docker-cont
 
 
 
-Deploying and Destroying Custom Docker Containers
+# Deploying and Destroying Custom Docker Containers
 
 
 Since we need to login to Docker registry, we need to be able to put our secrets in the code. To avoid exposing credentials in the clear, we will use ansible-vault to encrypt them. Create a file called secrets.yml with your login info:
