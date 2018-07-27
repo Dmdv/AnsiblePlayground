@@ -1,0 +1,7 @@
+- hosts: remote_server
+  user: deployer_user
+  tasks:
+  - name: Ansible copy file force
+    copy:
+      src: ~/Develop/permutations.py
+      dest: /etc/cert/permutations.py
