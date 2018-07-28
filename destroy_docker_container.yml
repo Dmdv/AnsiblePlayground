@@ -1,10 +1,10 @@
 ---
-- hosts: all
-  remote_user: ubuntu
+- hosts: 127.0.0.1
+  remote_user: deployer
   become: yes
   become_method: sudo
   tasks:
-  - name: create docker container
+  - name: destroy docker container
     docker_container:
       name: mycontainer
       image: ubuntu
